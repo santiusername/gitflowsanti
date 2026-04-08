@@ -13,15 +13,23 @@ fallidas++;
 }
 const actualEstado = estadoSistema();
 if (actualEstado.estado ==="activo"){
-consoloe.log("test 2: pasado: estadoSistema() funciona en codeRider");
+console.log("test 2 pasado: estadoSistema() funciona en CodeRider");
+
 pasadas++;
 }else {
-console.log("test 2 fallido: ", estado, "en codeRider");
+console.log("test 2 fallido: ",actualEstado, "en codeRider");
 fallidas++;
 }
-console.log ("\nResultados: " + pasadas + "pasadas, " + fallidas + "fallidas");
+const r3 = sumar(2, 3);
+if (r3 === 5) {
+  console.log("test 3 pasado: funcion sumar funciona correctamente");
+  pasadas++;
+} else {
+  console.log("test 3 fallido: ", r3);
+  fallidas++;
+}
+console.log ("\nResultados: " + pasadas + " pasadas, " + fallidas + "fallidas");
 if(fallidas > 0) process.exit(1);
-
 }
 ejecutarPruebas();
 
