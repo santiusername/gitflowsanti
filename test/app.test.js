@@ -1,4 +1,4 @@
-import {saludar, despedir, estadoSistema} from "../src/app.js"
+import {saludar, despedir, estadoSistema, restar} from "../src/app.js"
 
 function ejecutarPruebas() {
 let pasadas =0;
@@ -38,7 +38,6 @@ fallidas++;
 console.log ("\nResultados: " + pasadas + "pasadas, " + fallidas + "fallidas");
 if(fallidas > 0) process.exit(1);
 
-}
 ejecutarPruebas();
 
 
