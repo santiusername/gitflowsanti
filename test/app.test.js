@@ -27,15 +27,16 @@ if (r3 === 5) {
   fallidas++;
 }
 }
-conts r4 = restar(2, 3);
-if (r4 === 5) {
-console.log(test 3 pasado: funcion restar funciona correctamente");
-pasadas++;
-}else {
-console.log("test 4 fallido: ", r4);
-fallidas++;  
 
-console.log ("\nResultados: " + pasadas + "pasadas, " + fallidas + "fallidas");
+const r4 = restar(2, 3);
+if (r4 === -1) {
+  console.log("test 4 pasado: funcion restar funciona correctamente");
+  pasadas++;
+} else {
+  console.log("test 4 fallido: ", r4);
+  fallidas++;
+}
+console.log ("\nResultados: " + pasadas + "pasadas, " + fallidas + " fallidas");
 if(fallidas > 0) process.exit(1);
 
 ejecutarPruebas();
