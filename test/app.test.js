@@ -22,7 +22,7 @@ function ejecutarPruebas() {
   } else {
     console.log("test 2 fallido: ", actualEstado, "en CodeRider");
     fallidas++;
-  } // ← AQUÍ faltaba cerrar
+  } 
 
   // Test 3
   const r3 = sumar(2, 3);
