@@ -1,3 +1,5 @@
+import { version } from "react";
+
 export function saludar(nombre){
 return "hola " + nombre + ", bienvenido a aplicacion CodeRaider";
 }
@@ -15,3 +17,13 @@ export function sumar(a, b) {
   return a + b;
 }
 
+export function healthCheck() {
+  return  {
+    status: 'ok',
+    timestamp: new Date().toISOString(),
+    servicio: 'StreamFlow API',  
+    version: '1.0.0'
+  }
+
+
+}
