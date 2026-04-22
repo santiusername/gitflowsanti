@@ -5,7 +5,9 @@
  "description": "primera aplicacion Florelia flow",
  "scripts": {
  "start": "node src/app.js",
- "test": "node test/app.test.js"
+ "test": "node test/app.test.js",
+"build":  "echo paso para la producccion en Node.js"
+
 }
 }
 
